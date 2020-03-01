@@ -11,14 +11,16 @@
     box-sizing: border-box;
 }
 
-html {
+html,
+body {
     background-color: #fff;
     color: #555;
     font-family: 'Lato', 'Ariel', sans-serif;
     font-weight: 300;
     font-size: 20px;
     text-rendering: optimizeLegibility;
-}
+     /**** overflow: hidden;     ****/               /**** THIS ('overflow: hidden'): Addresses situations of ****/
+}                                                 /**** text overflowing the box when in small screens ****/
 
 .clearfix {zoom: 1}
 .clearfix:after {
@@ -430,7 +432,7 @@ cite img {
     background-color: #fff;
     border-radius: 5px;
     width: 90%;
-    margin-left: 5%;    
+/*    margin-left: 5%;    */
     box-shadow: 0 2px 2px #efefef;                    /*  x-offset y-offset blur color  */
 }
 
@@ -601,7 +603,16 @@ footer p {
      color: #517fab;
 }
 
+/* ------------------------ */
+/*   MEDIA QUERIES */
 
-/* ------------------------ */
-/*    */
-/* ------------------------ */
+/* See file "queries.css"  */
+/* ------------------------ */                                                   
+                                                    /*   MEDIA QUERIES */
+
+                                                    /* WIDTHS: 0 -- 480px  phones */
+                                                    /* WIDTHS: 480px -- 768px  tablets-vertical */
+                                                    /* WIDTHS: 768px -- 1024px  tablets-horizontal*/
+                                                    /* WIDTHS: 1024px -- 1200x  laptop */
+
+                                                    /* ------------------------ */
