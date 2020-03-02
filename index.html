@@ -13,22 +13,28 @@
 <!--    <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.css">-->
     <link rel="stylesheet" type="text/css" href="resources/css/style.css">
     <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
+    <script src="vendors/js/jquery-3.4.1.min.js" ></script>
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400&display=swap" rel="stylesheet" type="text/css">
     
+    <script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"></script>
+    <script src="vendors/js/jquery.waypoints.min.js" ></script>
+     <script src="resources/js/script.js"></script>
     <title>Omnifood</title>
 </head>
 
 <body>
   
   <header>
-    <nav>
+    <nav>  <!-- <nav class="sticky"> REMOVED AFTER jquery script addClass  -->
         <div class="row">
             <img src="resources/img/logo-white.png" alt="omnifood logo" class="logo">
+            <img src="resources/img/logo.png" alt="omnifood logo" class="logo-black">
             <ul class="main-nav">
-                <li> <a href="#">Food delivery</a> </li>
-                <li> <a href="#">How it works</a> </li>
-                <li> <a href="#">Our cities</a> </li>
-                <li> <a href="#">Sign up</a> </li>
+                <li> <a href="#features">Food delivery</a> </li>
+                <li> <a href="#works">How it works</a> </li>
+                <li> <a href="#cities">Our cities</a> </li>
+                <li> <a href="#plans">Sign up</a> </li>
             </ul>
         </div>
     </nav>
@@ -36,13 +42,13 @@
     
      <div class="hero-text-box">
          <h1>Goodbye junk food.<br> Hello super healthy meals.</h1>
-         <a class="btn btn-full" href="#">I'm hungry</a>
-         <a class="btn btn-ghost" href="#">Show me more</a>
+         <a class="btn btn-full js--scroll-to-plans" href="#">I'm hungry</a>
+         <a class="btn btn-ghost  js--scroll-to-start" href="#">Show me more</a>
      </div>    
   </header>
   
   
-  <section class="section-features">
+  <section class="section-features js--section-features" id="features">
      <div class="row">
     
         
@@ -144,7 +150,7 @@
       
   </section>
     
-  <section class="section-steps">
+  <section class="section-steps" id="works">
       <div class="row">
           <h2> How it works &mdash; Simple as 1, 2, 3</h2>
       </div>
@@ -179,7 +185,7 @@
   </section>
    
    
-   <section class="section-cities">
+   <section class="section-cities" id="cities">
        
         <div class="row">
               <h2> We're currently in these cities</h2>
@@ -290,9 +296,9 @@
            
        </section>
    
-       <section class="section-plans">
+       <section class="section-plans js--section-plans" id="plans">
           <div class="row">
-              <h3></h3>
+              <h2>Start eating healthy today</h2>
           </div>
            
            <div class="row">
@@ -473,7 +479,8 @@
 
    </footer>
     
-    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script> 
+<!--    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script> -->
+<!--    <script src="resources/js/script.js"></script>-->
     <!-- 2020 ion icons usage -->
 </body>
 </html>

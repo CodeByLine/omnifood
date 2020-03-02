@@ -19,6 +19,10 @@ eg.
 OR USE ANOTHER EXTENSION IN EDITOR: autoprefixer ---> "autoprefix selection"
 check other css files as well, incl. grid.css
 
+
+FOR OLDER BROWSERS, get cold from www.jsdelivr.com and post <script> files at the bottom of the index.html file
+use "respond" on www.jsdelivr.com
+
 */
 
 
@@ -249,6 +253,14 @@ header {
     margin-top: 20px;
 }
 
+.logo-black {
+    display: none;
+    height: 50px;
+    width: auto;
+    float: left;
+    margin: 5px 0;
+}
+
 .main-nav {
     float: right;
     list-style: none;
@@ -274,8 +286,32 @@ header {
 .main-nav li a:hover,
 .main-nav li a:active {
     border-bottom: 2px solid #e67e22;
-    
 }
+
+
+/*  STICKY NAV  */
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 2px 2px #efefef;
+    
+    z-index: 9999;
+}
+
+.sticky .main-nav { margin-top: 18px; }
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+    padding: 16px 0;
+    color: #555;
+}
+
+.sticky .logo {display: none; }
+.sticky .logo-black { display: block;}
 
 /* ------------------------ */
 /*  FEATURES  */
@@ -515,7 +551,6 @@ cite img {
 .plan-box ul li {
     padding: 5px 0;
 }
-
 
 
 /* ------------------------ */
