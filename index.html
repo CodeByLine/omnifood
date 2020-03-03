@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
 <!--    <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.css">-->
+    <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
     <link rel="stylesheet" type="text/css" href="resources/css/style.css">
     <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
     <script src="vendors/js/jquery-3.4.1.min.js" ></script>
@@ -30,12 +31,16 @@
         <div class="row">
             <img src="resources/img/logo-white.png" alt="omnifood logo" class="logo">
             <img src="resources/img/logo.png" alt="omnifood logo" class="logo-black">
-            <ul class="main-nav">
+            <ul class="main-nav js--main-nav">
                 <li> <a href="#features">Food delivery</a> </li>
                 <li> <a href="#works">How it works</a> </li>
                 <li> <a href="#cities">Our cities</a> </li>
                 <li> <a href="#plans">Sign up</a> </li>
             </ul>
+
+  <!-------  RESPONSIVE NAVIGATION  ------->
+            
+            <a class="mobile-nav-icon"><ion-icon name="menu" class="js--nav-icon ion-android-menu" alt="Mobile Nav"></ion-icon></a>
         </div>
     </nav>
     
@@ -59,7 +64,7 @@
          </p> 
      </div>
      
-     <div class="row">
+     <div class="row js--wp-1">   <!-- wp: waypoint -->
          <div class="col span-1-of-4 box">
             <ion-icon name="infinite-outline" class="icon-big"></ion-icon>   <!-- 2020 ion icons usage -- script below -->
              <h3>Up to 365 days/year</h3>
@@ -156,7 +161,7 @@
       </div>
       
       <div class="row">
-          <div class="col span-1-of-2 steps-box">
+          <div class="col span-1-of-2 steps-box js--wp-3">
              <img src="resources/img/app-iPhone.png" alt="Ominifood app on iPhone" class="app-screen">   
           </div>
           
@@ -191,7 +196,7 @@
               <h2> We're currently in these cities</h2>
         </div>
               
-        <div class="row">
+        <div class="row js--wp-2">
             <div class="col span-1-of-4 box">
               <img src="resources/img/lisbon-3.jpg" alt="Lisbon">
               <h3>Lisbon</h3>
@@ -303,7 +308,7 @@
            
            <div class="row">
                <div class="col span-1-of-3">
-                   <div class="plan-box">
+                   <div class="plan-box  js--wp-4">
                       
                         <div>
                            <h3>Premium</h3>

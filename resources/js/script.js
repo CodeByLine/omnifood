@@ -67,14 +67,59 @@ $(document).ready(function() {
         }
       });
     
+    /* Animation on scroll */
     
-    //CHANGING H1 PROPERTIES:
+    $('.js--wp-1').waypoint(function() {                /* wp: waypoint */    
+        $('.js--wp-1').addClass('animated fadeIn');    // 'animated fadeIn' is how to use animate.css
+    }, {                                                // Also need to make element invisible first
+        offset: '50%;'                                   // Also need to add 'animate.css'
+    });                                                   
+    
+    
+    $('.js--wp-2').waypoint(function() {                /* wp: waypoint */    
+    $('.js--wp-2').addClass('animated fadeIn');         // 'animated fadeIn' is how to use animate.css
+    }, {                                                // Also need to make element invisible first
+        offset: '50%;'                                   // Also need to add 'animate.css'
+    }); 
+    
+    
+    $('.js--wp-3').waypoint(function() {                /* wp: waypoint */    
+    $('.js--wp-3').addClass('animated fadeInUp');    // 'animated fadeIn' is how to use animate.css
+    }, {                                                // Also need to make element invisible first
+        offset: '50%;'                                   // Also need to add 'animate.css'
+    }); 
+    
+    $('.js--wp-4').waypoint(function() {                /* wp: waypoint */    
+    $('.js--wp-4').addClass('animated pulse');    // 'animated fadeIn' is how to use animate.css
+    }, {                                                // Also need to make element invisible first
+        offset: '50%;'                                   // Also need to add 'animate.css'
+    }); 
+    
+    
+    /* Mobile Nav */
+    
+    $('.js--nav-icon').click(function() {    
+        var nav = $('.js--main-nav');
+        var icon = $('.js--nav-icon');
+        nav.slideToggle(200);                       // 'slideToggle': a jQuery function
+        if (icon.hasClass('.ion-android-menu')) {
+            icon.addClass('.ion-close');
+            icon.removeClass('.ion-android-menu');
+        } else {
+            icon.addClass('.ion-android-menu');
+            icon.removeClass('ion-close');
+        }
+    });
+    
+    
+    // CHANGING H1 PROPERTIES:
 
         //$(document).ready(function() {
         //    $('h1').click(function() {
         //        $(this).css('background-color', '#ff0000');
         //        $(this).css('color', '#ff0000');
         //    })
+        
 
 });
 
